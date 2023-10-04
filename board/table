@@ -1,0 +1,30 @@
+설문사항 만들기
+체크 15개를 넣자.
+체크는 라디오랑 체크박스로?
+chk1 int default 0;
+~10까지
+설문은 어떻게할까
+1. 나이대가 어떻게 되시나요?  
+2. 성별이 어떻게 되시나요?
+3. 평소에 게임을 하시는 시간이 어떻게 되시나요?
+4. 기존에 하고 계시는 게임이 있으신가요? 네 아니오
+5. 게임의 종류가 어떻게 되시나요?
+6. 하단의 게임 중 하시고 계시는 게임을 선택해주세요(최소 1개)
+7. 버블버블의 그래픽은 만족하시요? 
+8. 버블버블의 스토리는 만족하시나요? 0일시 이유 게제
+9. 버블버블의 액션성에 만족하시나요? 0일시 이유 게제
+10. 버블버블에 원하시는 점을 적어주세요 (최대 200자)
+
+create table aboard (
+id int auto_increment primary key,
+chk1 int default 0,
+chk2 int default 0,
+chk3 int default 0,
+chk4 int default 0,
+chk5 int default 0,
+chk6 int default 0,
+chk7 int default 0,
+chk8 int default 0,
+chk9 int default 0,
+chk10 varchar(100),
+writeday date);

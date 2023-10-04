@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.BoardMapper">
+
+<insert id="writeOk">
+	insert into aboard(chk1,chk2,chk3,chk4,chk5,chk6,chk7,chk8,chk9,chk10,writeday)
+	values(#{chk1},#{chk2},#{chk3},#{chk4},#{chk5},#{chk6},#{chk7},#{chk8},#{chk9},#{chk10},now())
+</insert>
+<select id="list" resultType="com.example.demo.vo.BoardVo">
+	select * from aboard
+</select>
+<select id="chk" resultType="int">
+	select count(*) from aboard where ${chk}=${num}
+</select>
+</mapper>
